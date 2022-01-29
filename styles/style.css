@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #05386B;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #5CDB95;
+}
+
+body i, body button, body a, body select {
+  cursor: pointer;
+}
+
+body .hide {
+  display: none !important;
+}
+
+body header {
+  height: 80px;
+  width: 100%;
+  background-color: #5CDB95;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+}
+
+body header > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navbar {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+body header .navbar .hamburger {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #05386B;
+}
+
+body header .navbar .hamburger:hover {
+  color: #042b52;
+}
+
+body header .navbar .navlinks {
+  position: absolute;
+  background-color: #5CDB95;
+  height: 400px;
+  width: 200px;
+  top: 80px;
+  left: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: expand .2s linear;
+          animation: expand .2s linear;
+}
+
+body header .navbar .navlinks a {
+  margin: 30px 20px 0px 20px;
+  text-decoration: none;
+  color: #05386B;
+}
+
+body header .logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .logo .logotype {
+  height: 60px;
+  width: 120px;
+  background-color: #05386B;
+}
+
+body header .header-icons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 25px;
+  position: relative;
+}
+
+body header .header-icons i {
+  margin: 0px 10px;
+  color: #05386B;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .header-icons i:hover {
+  color: #042b52;
+}
+
+body header .header-icons i .user-logged-in {
+  position: absolute;
+  top: 30px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+
+body header .header-icons i .like-counter, body header .header-icons i .item-counter {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .header-icons .likes {
+  height: 400px;
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #5CDB95;
+  border: 1px solid #05386B;
+  -webkit-animation: expand .2s linear;
+          animation: expand .2s linear;
+}
+
+body header .header-icons .shopping-cart {
+  height: 400px;
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  background-color: #5CDB95;
+  border: 1px solid #05386B;
+  -webkit-animation: expand .2s linear;
+          animation: expand .2s linear;
+}
+
+body .login-screen {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(55, 149, 130, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+body .login-screen .close-btn {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+body .login-screen .close-btn i {
+  color: #EDF5E1;
+  font-size: 20px;
+}
+
+body .login-screen .close-btn i:hover {
+  color: #8b967b;
+}
+
+body .login-screen .logo {
+  margin-bottom: 40px;
+}
+
+body .login-screen .logo .logotype {
+  background-color: #05386B;
+  height: 150px;
+  width: 300px;
+}
+
+body .login-screen .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-screen .login-form button, body .login-screen .login-form input {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+
+body .login-screen .login-form p {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+body .login-screen .login-form .error-msg {
+  color: white;
+  font-weight: 400;
+  width: 160px;
+  text-align: center;
+}
+
+body .login-screen .login-form .login-btn {
+  margin-top: 30px;
+  background-color: #DB675C;
+  color: white;
+}
+
+body .login-screen .login-form .login-btn:hover {
+  background-color: #b6564d;
+}
+
+body .login-screen .login-form .register-btn {
+  background-color: #EDF5E1;
+}
+
+body .login-screen .login-form .register-btn:hover {
+  background-color: #c9cfbe;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .intro {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #379683;
+}
+
+body main .intro > * {
+  margin: 0px 30px;
+}
+
+body main .intro > * h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+body main .intro > * p {
+  margin-bottom: 80px;
+  max-width: 500px;
+  color: white;
+}
+
+body main .intro > * button {
+  height: 50px;
+  width: 160px;
+  padding: 8px 24px;
+  background-color: #DB675C;
+  border: none;
+  color: white;
+  margin-bottom: 60px;
+}
+
+body main .intro > * button:hover {
+  background-color: #b6564d;
+}
+
+body main .shop {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8EE4AF;
+}
+
+body main .shop h2 {
+  margin: 120px 0px 20px 0px;
+}
+
+body main .shop .filter-and-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+body main .shop .filter-and-sort > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .shop .filter-and-sort .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .shop .filter-and-sort .filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 80px;
+  margin: 10px;
+  background-color: #EDF5E1;
+  position: relative;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+body main .shop .filter-and-sort .filters .filter .selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+body main .shop .filter-and-sort .filters .filter .selector p {
+  font-size: 16px;
+}
+
+body main .shop .filter-and-sort .filters .filter .options {
+  position: absolute;
+  top: 30px;
+  max-height: 160px;
+  overflow-y: scroll;
+  min-width: 140px;
+  background-color: #EDF5E1;
+  z-index: 4;
+}
+
+body main .shop .filter-and-sort .filters .filter .options > * {
+  margin: 10px;
+}
+
+body main .shop .filter-and-sort .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .shop .filter-and-sort .sorting select {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: #8b967b;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+body main .shop .selected-filters {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .shop .selected-filters button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 5px 5px;
+}
+
+body main .shop .selected-filters button div {
+  margin-left: 10px;
+}
+
+body main .shop .products-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+body main .shop .products-container article {
+  margin: 0px 10px 40px 10px;
+}
+
+body main .shop .products-container article > * {
+  margin-bottom: 10px;
+}
+
+body main .shop .products-container article .image {
+  height: 200px;
+  width: 180px;
+  background-color: #379683;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .shop .products-container article .image img {
+  max-height: 100%;
+}
+
+body main .shop .products-container article i {
+  position: absolute;
+  color: #5CDB95;
+  right: 15px;
+  bottom: 15px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.3;
+}
+
+body main .shop .products-container article i:hover {
+  opacity: 1;
+}
+
+body main .shop .products-container article .liked {
+  opacity: 1;
+  color: #d46e6e;
+}
+
+body main .shop .products-container article div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .shop .products-container article div:last-child button {
+  border: none;
+  background-color: #DB675C;
+  padding: 5px 10px;
+  color: white;
+}
+
+body main .shop .products-container article div:last-child button:hover {
+  background-color: #b6564d;
+}
+
+body main .shop .products-container article div:last-child select {
+  border: none;
+  background-color: #EDF5E1;
+}
+
+body main .shop .products-container article .product-price {
+  font-weight: 500;
+}
+
+body footer {
+  height: 30vh;
+  background-color: #05386B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+body footer .company-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+body footer .company-info .logo {
+  height: 60px;
+  width: 120px;
+  background-color: #EDF5E1;
+}
+
+body footer .company-info .address {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer .socme-links {
+  margin-right: 40px;
+  text-align: right;
+}
+
+body footer p, body footer i, body footer a {
+  color: #EDF5E1;
+}
+
+body footer i {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+@-webkit-keyframes expand {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+
+@keyframes expand {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

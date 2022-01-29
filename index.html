@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc9248cb13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navlinks hide">
+                <a href="#">Category 1</a>
+                <a href="#">Category 2</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <div class="logotype"></div>
+        </div>
+        <div class="header-icons">
+            <i class="fas fa-user">
+                <p class="user-logged-in hide"></p>
+            </i>
+            <i class="fas fa-heart">
+                <div class="like-counter hide"></div>
+            </i>
+            <div class="likes hide"></div>
+            <i class="fas fa-shopping-cart">
+                <div class="item-counter hide"></div>
+            </i>
+            <div class="shopping-cart hide"></div>
+        </div>
+    </header>
+    <div class="login-screen hide">
+        <button class="close-btn">
+            <i class='fas fa-times'></i>
+        </button>
+        <div class="logo">
+            <div class="logotype"></div>
+        </div>
+        <form action="" class="login-form" novalidate>
+            <input type="text" placeholder="username" class="username-input">
+            <input type="password" placeholder="password" class="password-input">
+            <p class="error-msg hide"></p>
+            <button class="login-btn">login</button>
+            <p>or</p>
+            <button class="register-btn">register</button>
+        </form>
+    </div>
+    <main>
+        <section class="intro">
+            <div>
+                <h1>Header</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloremque velit cumque minima sequi blanditiis provident ducimus cupiditate assumenda numquam.</p>
+                <button class="see-collection-btn">See collection</button>
+            </div>
+        </section>
+        <section class="shop">
+            <h2>Our collection</h2>
+            <div class="filter-and-sort">
+                <div class="filters">
+                    <div class="filter price-filter">
+                        <div class="selector">
+                            <p>price</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="options hide">
+                            <div>
+                                <input type="checkbox" name="option1" id="option1">
+                                <label for="option1">option 1</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option2" id="option2">
+                                <label for="option2">option 2</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option3" id="option3">
+                                <label for="option3">option 3</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter size-filter">
+                        <div class="selector">
+                            <p>size</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="options hide">
+                            <div>
+                                <input type="checkbox" name="option21" id="option21">
+                                <label for="option21">option 21</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option22" id="option22">
+                                <label for="option22">option 22</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option23" id="option23">
+                                <label for="option23">option 23</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter color-filter">
+                        <div class="selector">
+                            <p>color</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="options hide">
+                            <div>
+                                <input type="checkbox" name="option31" id="option31">
+                                <label for="option31">option 31</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option32" id="option32">
+                                <label for="option32">option 32</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option33" id="option33">
+                                <label for="option33">option 33</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option34" id="option34">
+                                <label for="option34">option 34</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option35" id="option35">
+                                <label for="option35">option 35</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="option 36" id="option36">
+                                <label for="option36">option 36</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sorting">
+                    <select name="" id="">
+                        <option value="" selected disabled>sort by</option>
+                        <option value="">price</option>
+                        <option value="">size</option>
+                        <option value="">color</option>
+                    </select>
+                </div>
+            </div>
+            <div class="selected-filters"></div>
+            <div class="products-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="company-info">
+            <div class="logo"></div><br>
+            <div class="address">
+                <p>Street Address 123</p>
+                <p>Cityname, Country</p><br>
+                <a href="#">012-345678</a>
+                <a href="#">company@mail.com</a>
+            </div>
+        </div>
+        <div class="links"></div>
+        <div class="socme-links">
+            <p>follow us on</p><br>
+            <div>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+<div class='image'>
+    <img src='${product.image}' alt=''>
+    <i class="fas fa-heart"></i>
+</div>
+<div class='product-info'>
+    <p class='product-name'>${product.name}</p>
+    <p class='product-price'>${product.price} SEK</p>
+</div>
+<div>
+    <button class='add-to-cart'>Add to cart</button>
+    <select name='' id='' class='size'>
+        <option selected disabled>size</option>
+        <option value='XS'>XS</option>
+        <option value='S'>S</option>
+        <option value='M'>M</option>
+        <option value='L'>L</option>
+        <option value='XL'>XL</option>
+    </select>
+    <select name='' id='' class='amount'>
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+    </select>
+</div> -->
